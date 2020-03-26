@@ -22,12 +22,16 @@ public class Array
         int num = 0;
         int overallSum = 0;
         int result = 0;
+        
         Scanner s = new Scanner(System.in);
+        
         while (true) {
         System.out.print("Please enter a number to be added: ");
         num = s.nextInt();
+      
         System.out.print("Please enter the number of integers in your array: ");
         m = s.nextInt();
+            
         if (m > 0) {
         int a[] = new int[m];
         System.out.println("Please enter all of your positive numbers, one at a time: ");
@@ -43,12 +47,14 @@ public class Array
             result = 10*result + a[i];
             overallSum = reverseResult(result) + num;
         } 
+            
         String answer = Integer.toString(overallSum);
         int[] newOverallSum = new int[answer.length()];
         for (int i = 0; i < answer.length(); i++)
           {
              newOverallSum[i] = answer.charAt(i) - '0';
           }
+            
           System.out.println("Sum: " + Arrays.toString(newOverallSum));
           break;
     }
