@@ -55,7 +55,7 @@ public class Array
              newOverallSum[i] = answer.charAt(i) - '0';
           }
             
-          System.out.println("Sum: " + Arrays.toString(newOverallSum));
+          System.out.println("Output: " + Arrays.toString(newOverallSum));
           break;
     }
     else if (m < 0) {
